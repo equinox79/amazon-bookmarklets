@@ -6,7 +6,7 @@
     <h1>Bookmarklet for Amazon</h1>
 
     <h2>Amazon de 税抜き表示</h2>
-    <a href="javascript:(function()%7B(function()%7Bdocument.querySelector("%23priceblock_ourprice").textContent %2B%3D"｜税抜き%3A " %2B Math.round( document.querySelector("%23priceblock_ourprice").textContent.replace(%2F%5B%5E0-9%5D%2Fg%2C '') %2F 1.08 ) %2B "円"%7D)()%7D)()">Amazon de 税抜表示</a>
+    <a href="javascript:void%20function(){(function(){document.querySelector(%22%23priceblock_ourprice%22).textContent+=%22｜税抜き:%20%22+Math.round(document.querySelector(%22%23priceblock_ourprice%22).textContent.replace(/[^0-9]/g,%22%22)/1.08)+%22円%22})()}();">Amazon de 税抜表示</a>
 
     <h2>Amazonのページから稟議向けのテキスト作成</h2>
     <a href="javascript:alert('aaa')">aaa</a>
